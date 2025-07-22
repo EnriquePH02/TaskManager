@@ -1,0 +1,27 @@
+# === FRONTEND (Angular) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.env
+frontend/.vscode/
+
+# === BACKEND (ASP.NET Core) ===
+TaskManager/bin/
+TaskManager/obj/
+TaskManager/tasks.db
+TaskManager/*.user
+TaskManager/*.suo
+TaskManager/*.userosscache
+TaskManager/*.sln.docstates
+TaskManager/.vscode/
+
+# === VISUAL STUDIO SOLUTION ===
+*.vs/
+*.suo
+*.user
+*.userosscache
+
+# === SYSTEM FILES ===
+.DS_Store
+Thumbs.db
+*.log
