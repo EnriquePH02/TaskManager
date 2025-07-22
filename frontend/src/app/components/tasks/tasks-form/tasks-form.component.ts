@@ -18,7 +18,11 @@ export class TasksFormComponent {
   constructor(public activeModal: NgbActiveModal){}
 
   onSave(): void{
-    this.activeModal.close(this.task);
+    if(!this.task.title.trim()){
+      alert("Title is required");
+    }else{
+      this.activeModal.close(this.task);
+    }
   }
 
   onCancel(): void{

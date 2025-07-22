@@ -18,7 +18,11 @@ export class CategoriesFormComponent {
   constructor(public activeModal: NgbActiveModal){}
 
   onSave(): void{
-    this.activeModal.close(this.category);
+    if(!this.category.name.trim()){
+      alert('Name is required');
+    }else{
+      this.activeModal.close(this.category);
+    }
   }
 
   onCancel(): void{
